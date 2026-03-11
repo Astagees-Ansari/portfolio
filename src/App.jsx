@@ -1,11 +1,11 @@
 
 import "./App.css";
-import Contact from "./componets/Contact";
-import Home from "./componets/Home";
-import Menu from "./componets/Menu";
-import Skils from "./componets/Skils";
-import Story from "./componets/Story";
-import Works from "./componets/Works";
+import Contact from "./components/Contact";
+import Home from "./components/Home";
+import Menu from "./components/Menu";
+import Skils from "./components/Skils";
+import Story from "./components/Story";
+import Works from "./components/Works";
 
 function App() {
   return (
