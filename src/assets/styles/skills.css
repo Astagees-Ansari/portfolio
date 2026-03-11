@@ -1,0 +1,136 @@
+.skills {
+    padding: 120px 20px;
+}
+
+.skills-title {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 80px;
+}
+
+.skills-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 400px 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* TEXT */
+
+.skills-text p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* ICON AREA */
+
+.skills-icons {
+    position: relative;
+    width: 400px;
+    height: 350px;
+    padding: 30px;
+    margin: auto;
+}
+
+/* BASE ICON */
+
+.icon {
+    position: absolute;
+    font-size: 55px;
+    animation: float 4s ease-in-out infinite;
+}
+
+/* FLOAT ANIMATION */
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* POSITIONS */
+
+.html {
+    color: #E34F26;
+    top: 20px;
+    left: 30px;
+}
+
+.css {
+    color: #1572B6;
+    top: 120px;
+    left: 80px;
+}
+
+.js {
+    color: #F7DF1E;
+    top: 220px;
+    left: 40px;
+}
+
+.react {
+    color: #61DBFB;
+    top: 20px;
+    right: 40px;
+}
+
+.tailwind {
+    color: #38BDF8;
+    top: 150px;
+    right: 40px;
+}
+
+.bootstrap {
+    color: #7952B3;
+    top: 250px;
+    right: 120px;
+}
+
+.node {
+    color: #68A063;
+    top: 180px;
+    left: 180px;
+}
+
+.express {
+    color: #444;
+    top: 80px;
+    right: 150px;
+}
+
+.mysql {
+    color: #00758F;
+    top: 300px;
+    left: 150px;
+}
+
+.git {
+    color: #F1502F;
+    top: 40px;
+    left: 220px;
+}
+
+.github {
+    color: #000;
+    top: 230px;
+    right: 20px;
+}
+
+.postman {
+    color: #FF6C37;
+    top: 160px;
+    left: 300px;
+}
