@@ -7,7 +7,8 @@
 /* CARD */
 
 .contact-card {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     padding: 60px;
 
     border-radius: 25px;
@@ -84,4 +85,31 @@
     font-style: italic;
     color: #555;
     line-height: 1.6;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 500px) {
+
+    .contact {
+        padding: 80px 15px;
+    }
+
+    .contact-card {
+        padding: 30px 20px;
+    }
+
+    .contact-card h2 {
+        font-size: 26px;
+    }
+
+    .contact-name {
+        font-size: 18px;
+    }
+
+    .contact-item {
+        font-size: 16px;
+    }
+
 }

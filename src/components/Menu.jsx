@@ -41,12 +41,12 @@ const Menu = () => {
                     </button>
 
                     {/* Hamburger */}
-                    {/* <div
+                    <div
                         className="hamburger"
                         onClick={() => setOpen(!open)}
                     >
                         ☰
-                    </div> */}
+                    </div>
 
                 </div>
 

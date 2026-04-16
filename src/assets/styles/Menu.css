@@ -1,112 +1,145 @@
-.menu{
-  position: fixed;
-  bottom: 25px;        /* bottom par chipka hua */
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
-}   
+/* MENU WRAPPER */
 
-/* pill container */
-.menu-container{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 35px;
+.menu {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
 
-  padding: 10px 25px;
-
-  background: #f5f5f5;
-  border-radius: 50px;
-
-  box-shadow: 
-  0 6px 15px rgba(0,0,0,0.15);
-
-  backdrop-filter: blur(10px);
-}
-
-/* logo */
-.logo img{
-  height: 40px;
-  object-fit: contain;
-  cursor: pointer;
-}
-
-/* nav links */
-.nav-links{
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  list-style: none;
-}
-
-/* nav items */
-.nav-links li{
-  font-size: 16px;
-  cursor: pointer;
-  color: #333;
-  transition: all 0.3s ease;
-}
-
-.nav-links li:hover{
-  color: black;
-  transform: translateY(-2px);
-}
-
-/* right side */
-.menu-right{
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-/* say hi button */
-.sayHi{
-  padding: 8px 18px;
-  border-radius: 20px;
-  border: none;
-  background: black;
-  color: white;
-  font-size: 14px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.sayHi:hover{
-  background: #333;
-}
-
-/* hamburger */
-.hamburger{
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-/* MOBILE */
-@media(max-width:768px){
-
-  .nav-links{
-    position: absolute;
-    top: 70px;
-    right: 20px;
-
-    flex-direction: column;
-    background: white;
-
-    padding: 20px;
-    border-radius: 20px;
-
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-
-    display: none;
-  }
-
-  .nav-links.active{
     display: flex;
-  }
+    justify-content: center;
 
-  .hamburger{
-    display: block;
-  }
+    z-index: 1000;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 500px;
+    max-width: 90%;
+
+    padding: 10px 20px;
+
+    background: #f5f5f5;
+    border-radius: 50px;
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width:768px) {
+
+    .menu-container {
+        width: 210px;
+        height: 60px;
+    }
+
+}       
+
+/* LOGO */
+
+.logo img {
+    height: 40px;
+    cursor: pointer;
+}
+
+/* NAV LINKS */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links li {
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+    transition: 0.3s;
+}
+
+.nav-links li:hover {
+    color: black;
+}
+
+/* RIGHT SIDE */
+
+.menu-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* SAY HI BUTTON */
+
+.sayHi {
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: none;
+
+    background: black;
+    color: white;
+
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* HAMBURGER */
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* ================= */
+/* MOBILE */
+/* ================= */
+
+@media screen and (max-width:768px) {
+
+    .logo {
+        display: none;
+    }
+
+    .menu-container {
+        width: 205px;
+        height: 60px;
+
+        padding: 10px 16px;
+
+        transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+    }
+
+    .nav-links {
+        position: absolute;
+
+        bottom: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        flex-direction: column;
+        gap: 15px;
+
+        background: white;
+
+        padding: 20px;
+        border-radius: 20px;
+
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
 
 }

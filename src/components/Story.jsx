@@ -1,5 +1,5 @@
 import "../assets/styles/story.css";
-import myimg from "../assets/images/me.jpg";
+import myimg from "../assets/images/Own.jpeg";
 
 const Story = () => {
     return (

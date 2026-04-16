@@ -1,51 +1,135 @@
+/* ========================
+   MOBILE FIRST (default)
+======================== */
+
 .works {
-    padding: 120px 20px;
+    padding: 60px 15px;
     text-align: center;
 }
 
 .works-title {
-    font-size: 42px;
-    margin-bottom: 80px;
+    font-size: 28px;
+    margin-bottom: 40px;
 }
 
+.stack-container {
+    position: relative;
+}
+
+/* CARD */
+
 .stack-card {
-    position: sticky;
-    top: 120px;
+    position: relative; /* mobile pe sticky OFF */
+    width: 100%;
+    margin-bottom: 40px;
 
-    width: 80%;
-    margin: auto;
-    margin-bottom: 120px;
-
-    border-radius: 25px;
+    border-radius: 18px;
     overflow: hidden;
 
     background: white;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 
-    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stack-card:hover {
+    transform: scale(1.02);
 }
 
 /* IMAGE */
 
 .stack-card img {
     width: 100%;
-    height: 420px;
+    height: 220px;
     object-fit: cover;
 }
 
 /* TEXT */
 
 .card-content {
-    padding: 25px;
+    padding: 18px;
     text-align: left;
 }
 
 .card-content h3 {
-    font-size: 26px;
-    margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 8px;
 }
 
 .card-content p {
-    font-size: 18px;
+    font-size: 14px;
     color: #555;
+}
+
+/* ========================
+   TABLET (768px+)
+======================== */
+
+@media (min-width: 768px) {
+
+    .works {
+        padding: 80px 20px;
+    }
+
+    .works-title {
+        font-size: 34px;
+    }
+
+    .stack-card {
+        width: 85%;
+        margin: auto;
+        margin-bottom: 80px;
+    }
+
+    .stack-card img {
+        height: 300px;
+    }
+}
+
+/* ========================
+   DESKTOP (1024px+)
+======================== */
+
+@media (min-width: 1024px) {
+
+    .works {
+        padding: 120px 20px;
+    }
+
+    .works-title {
+        font-size: 42px;
+        margin-bottom: 80px;
+    }
+
+    .stack-card {
+        position: sticky;
+        width: 75%;
+        top: 120px;
+        margin-bottom: 120px;
+        border-radius: 25px;
+    }
+
+    /* STACK EFFECT */
+
+    .stack-card:nth-child(1) { top: 120px; }
+    .stack-card:nth-child(2) { top: 140px; }
+    .stack-card:nth-child(3) { top: 160px; }
+    .stack-card:nth-child(4) { top: 180px; }
+
+    .stack-card img {
+        height: 420px;
+    }
+
+    .card-content h3 {
+        font-size: 26px;
+    }
+
+    .card-content p {
+        font-size: 18px;
+    }
+
+    .stack-card:hover {
+        transform: scale(1.03);
+        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+    }
 }
